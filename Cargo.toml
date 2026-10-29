@@ -2,5 +2,14 @@
 name = "easysheet"
 version = "0.1.0"
 edition = "2024"
+description = "A friendly, local-first OpenDocument spreadsheet editor"
+license = "GPL-3.0-or-later"
 
 [dependencies]
+eframe = "0.33"
+rfd = "0.15"
+spreadsheet-ods = "1.0.4"
+
+tempfile = "3"
+quick-xml = "0.38"
+zip = { version = "6", default-features = false, features = ["deflate"] }
